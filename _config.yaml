@@ -4,4 +4,11 @@ plugins:
 minima:
   skin: auto
   show_excerpts: true
+  social_links:
+  - title: LinkedIn
+    icon: linkedin
+    url: "https://www.linkedin.com/in/timothybrookes/"
+  - title: Blog
+    icon: github
+    url: "https://mrshiny608.github.io/MrShiny608/"
   
