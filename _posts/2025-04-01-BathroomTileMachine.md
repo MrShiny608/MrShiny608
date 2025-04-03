@@ -9,7 +9,7 @@ excerpt_separator: <!--more-->
 
 # Painting the Bathroom Tiles 🧼🛁
 
-[![Check me out on Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/timothybrookes) [![View on GitHub](https://img.shields.io/badge/GitHub-View%20Repo-blue?logo=github)](https://github.com/MrShiny608/bathroom_tile_machine/tree/master)
+[![Check me out on Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/timothybrookes) [![View on GitHub](https://img.shields.io/badge/GitHub-View%20Repo-blue?logo=github)](https://github.com/MrShiny608/bathroom_tile_machine/tree/master) [![Blog](https://img.shields.io/badge/GitHub%20Pages-View%20Blog-green?logo=github&style=flat-square)](https://mrshiny608.github.io/MrShiny608/)
 
 > A satirical dive into GitHub contribution graphs, developer vanity metrics, and what it really means to write good code.
 <!--more-->
