@@ -3,7 +3,4 @@ plugins:
   - jekyll-remote-theme
 minima:
   skin: auto
-collections:
-  blog:
-    output: true
-    permalink: /blog/:name/
+  
