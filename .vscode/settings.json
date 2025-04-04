@@ -1,0 +1,14 @@
+{
+    "emeraldwalk.runonsave":{
+        "message": "Preprocessing markdown",
+        "messageAfter": "Preprocessing markdown complete!",
+        "commands": [
+            {
+                "cmd": ". _scripts/preprocess_posts.sh",
+                "match": "_posts_md/.*\\.md",
+                "autoShowOutputPanel": "error",
+                "isAsync": false,
+            }
+        ]
+    }
+}
