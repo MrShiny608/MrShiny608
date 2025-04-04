@@ -1,3 +1,5 @@
+url: "https://mrshiny608.github.io"
+baseurl: "/MrShiny608"
 remote_theme: jekyll/minima
 plugins:
   - jekyll-remote-theme
