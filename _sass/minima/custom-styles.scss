@@ -1,0 +1,29 @@
+.mermaid-grid {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+}
+  
+.base-card {
+    background: rgba(128, 128, 128, 0.5);
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.pie-card {
+    @extend .base-card;
+    width: 300px;
+    max-width: 100%;
+    text-align: center;
+}
+
+.quadrant-card {
+    @extend .base-card;
+    width: 500px;
+    max-width: 100%;
+    text-align: center;
+}
