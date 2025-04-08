@@ -1,5 +1,5 @@
 ---
-title: The Bathroom Tile Machine
+title: Painting the Bathroom Tiles 🧼🛁
 date: 2025-04-01
 layout: post
 tags: github dev_culture
@@ -9,8 +9,6 @@ excerpt_separator: <!--more-->
 
 > A satirical dive into GitHub contribution graphs, developer vanity metrics, and what it really means to write good code.
 <!--more-->
-
-# Painting the Bathroom Tiles 🧼🛁
 
 [![Check me out on Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/timothybrookes) [![View on GitHub](https://img.shields.io/badge/GitHub-View%20Repo-blue?logo=github)](https://github.com/MrShiny608/bathroom_tile_machine/tree/master)
 
@@ -143,7 +141,5 @@ This project is a satire, a dev tool, a learning aid, and a very nerdy joke. �
 If it makes you laugh — or think twice before judging someone’s GitHub profile — it’s done its job.
 
 ---
-
-Stay honest. Stay weird. And always reticulate your splines. 🧼🧠🚀
 
 [![Check me out on Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/timothybrookes) [![View on GitHub](https://img.shields.io/badge/GitHub-View%20Repo-blue?logo=github)](https://github.com/MrShiny608/bathroom_tile_machine/tree/master)
