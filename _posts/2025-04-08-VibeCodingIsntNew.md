@@ -2,7 +2,7 @@
 title: ✨ "Vibe Coding" Isn't New
 date: 2025-04-08
 layout: post
-tags: github dev_culture vibe_coding
+tags: dev_culture vibe_coding
 categories: ai
 excerpt_separator: <!--more-->
 ---
@@ -37,7 +37,7 @@ This shift has created the final form of the vibe coder: someone who operates en
 And it comes with consequences.
 
 <div class="mermaid-grid">
-<div class="pie-card">
+<div class="small-inline-card">
 
 <div class="mermaid">
 pie 
@@ -50,7 +50,7 @@ pie
 </div>
 
 <div class="mermaid-grid">
-<div class="pie-card">
+<div class="small-inline-card">
 
 <div class="mermaid">
 pie 
@@ -61,7 +61,7 @@ pie
 
 </div>
 
-<div class="pie-card">
+<div class="small-inline-card">
 
 <div class="mermaid">
 pie 
@@ -90,7 +90,7 @@ Somewhere between these two extremes are the developers who balance progress and
 - **🔧 The Engineering-Focused Coder** approaches development with scalability, maintainability, and reliability in mind. They understand that a bug or an outage can erode user trust just as much as a bad feature. For them, clean engineering is not an abstract pursuit - it’s a way to ensure smooth launches, provide a reliable user experience, and protect the company’s reputation. They care deeply about feature releases too - knowing that timely delivery is as crucial to users as stability.
 
 <div class="mermaid-grid">
-<div class="quadrant-card">
+<div class="large-inline-card">
 
 <div class="mermaid">
 quadrantChart

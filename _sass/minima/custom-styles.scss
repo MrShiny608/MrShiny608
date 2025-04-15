@@ -14,16 +14,23 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-.pie-card {
+.small-inline-card {
     @extend .base-card;
     width: 300px;
     max-width: 100%;
     text-align: center;
 }
 
-.quadrant-card {
+.large-inline-card {
     @extend .base-card;
     width: 500px;
+    max-width: 100%;
+    text-align: center;
+}
+
+.xlarge-inline-card {
+    @extend .base-card;
+    width: 800px;
     max-width: 100%;
     text-align: center;
 }
