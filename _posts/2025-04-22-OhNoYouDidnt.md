@@ -25,10 +25,10 @@ The task? The classic "Two Sum" problem. You're given a list of unique numbers a
 length := int64(len(data))
 
 for i := int64(0); i < length; i++ {
-    compliment := target - data[i]
+    complement := target - data[i]
 
     for j := i + 1; j < length; j++ {
-        if data[j] == compliment {
+        if data[j] == complement {
             return []int64{i, j}
         }
     }
@@ -55,9 +55,9 @@ Here’s what that looks like:
 
 hashmap := make(map[int64]int64)
 for i, a := range data {
-    compliment := target - a
+    complement := target - a
 
-    index, ok := hashmap[compliment]
+    index, ok := hashmap[complement]
     if ok {
         return []int64{index, int64(i)}
     }
@@ -186,10 +186,10 @@ But I was curious, how would an interpreted language fare? 🧐
 
 length = len(data)
 for i, a in enumerate(data):
-    compliment = target - a
+    complement = target - a
 
     for j in range(i + 1, length):
-        if data[j] == compliment:
+        if data[j] == complement:
             return [i, j]
 
 return None
@@ -222,10 +222,10 @@ So lets check out the hashmap...
 
 hashmap = {}
 for i, a in enumerate(data):
-    compliment = target - a
+    complement = target - a
 
-    if compliment in hashmap:
-        return [hashmap[compliment], i]
+    if complement in hashmap:
+        return [hashmap[complement], i]
 
     hashmap[a] = i
 
@@ -255,7 +255,7 @@ Wait... what? 😳
 
 Erm, yes, so, beating all expectations Python has not only achieved performance *on par with Go* but it's also avoided the stepped allocations, at `n = 10` Python took \~1604ns! I checked out some PEPs and the CPython dictionary [source code](https://github.com/python/cpython/blob/main/Objects/dictobject.c), here’s what’s going on:
 
-- `compliment in hashmap` and `hashmap[a] = i` are backed by C implementations, these operations don’t stay in Python - they cross the boundary into optimized C code, skipping the interpreter’s overhead entirely. That boundary crossing is expensive in general, but once through, you get raw performance with near-native memory access speeds. 🚀
+- `complement in hashmap` and `hashmap[a] = i` are backed by C implementations, these operations don’t stay in Python - they cross the boundary into optimized C code, skipping the interpreter’s overhead entirely. That boundary crossing is expensive in general, but once through, you get raw performance with near-native memory access speeds. 🚀
 - Writes to dict are mostly memory-bound - and Python’s bottleneck *is* the CPU. While waiting for those memory accesses to complete, the CPU doesn’t just sit idle. It stays busy interpreting Python bytecode, handling reference counting, checking types, and managing control flow.
 
 Combined, these mean Python is able to perform ridiculously fast, and time it's allocations to fit better within CPU utilisation. If you squint hard, you *can* spot micro-steps, but they're faint. The interpreted nature of Python smooths the curve. 🌊
@@ -311,10 +311,10 @@ My recommendation here would be to lean towards dictionary comprehensions for pr
 hashmap = {v: i for i, v in enumerate(data)}
 
 for i, a in enumerate(data):
-    compliment = target - a
+    complement = target - a
 
-    if compliment in hashmap:
-        return [hashmap[compliment], i]
+    if complement in hashmap:
+        return [hashmap[complement], i]
 
 return None
 ```
@@ -345,10 +345,10 @@ hashmap = {}
 hashmap.update(enumerate_to_dict_update(data))
 
 for i, a in enumerate(data):
-    compliment = target - a
+    complement = target - a
 
-    if compliment in hashmap:
-        return [hashmap[compliment], i]
+    if complement in hashmap:
+        return [hashmap[complement], i]
 
 return None
 ```
@@ -386,9 +386,9 @@ Here we see that `update` is slower than using our original implementation, whic
 hashmap = dict.fromkeys(data)
 
 for i, a in enumerate(data):
-    compliment = target - a
+    complement = target - a
 
-    j = hashmap.get(compliment)
+    j = hashmap.get(complement)
     if j is not None:
         return [j, i]
 
