@@ -6,6 +6,7 @@ plugins:
 minima:
   skin: auto
   show_excerpts: true
+  hide_site_feed_link: true
   social_links:
   - title: LinkedIn
     icon: linkedin
@@ -13,4 +14,3 @@ minima:
   - title: Blog
     icon: github
     url: "https://mrshiny608.github.io/MrShiny608/"
-  
