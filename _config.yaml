@@ -3,10 +3,10 @@ baseurl: "/MrShiny608"
 remote_theme: jekyll/minima
 plugins:
   - jekyll-remote-theme
+  - jekyll-feed
 minima:
   skin: auto
   show_excerpts: true
-  hide_site_feed_link: true
   social_links:
   - title: LinkedIn
     icon: linkedin
