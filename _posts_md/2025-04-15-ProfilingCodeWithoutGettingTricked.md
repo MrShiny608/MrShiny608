@@ -10,7 +10,7 @@ excerpt_separator: <!--more-->
 > A deeper dive into profiling code for optimisation - and how your measurements might be lying to you
 <!--more-->
 
-[![Check me out on Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/timothybrookes) [![View on GitHub](https://img.shields.io/badge/GitHub-View%20Repo-blue?logo=github)](https://github.com/MrShiny608/code_profiling_playground/tree/master)
+[![RSS Feed](https://img.shields.io/badge/RSS-Subscribe-orange?logo=rss&logoColor=white)](https://mrshiny608.github.io/MrShiny608/feed.xml) [![Check me out on Linkedin](https://img.shields.io/badge/LinkedIn-Profile-0077B5?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/timothybrookes) [![View on GitHub](https://img.shields.io/badge/GitHub-View%20Repo-blue?logo=github)](https://github.com/MrShiny608/code_profiling_playground/tree/master)
 
 ## 🧠 Guessing Isn't Good Enough
 
@@ -225,4 +225,4 @@ If you want meaningful, repeatable results:
 
 ---
 
-[![Check me out on Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/timothybrookes) [![View on GitHub](https://img.shields.io/badge/GitHub-View%20Repo-blue?logo=github)](https://github.com/MrShiny608/code_profiling_playground/tree/master)
+[![RSS Feed](https://img.shields.io/badge/RSS-Subscribe-orange?logo=rss&logoColor=white)](https://mrshiny608.github.io/MrShiny608/feed.xml) [![Check me out on Linkedin](https://img.shields.io/badge/LinkedIn-Profile-0077B5?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/timothybrookes) [![View on GitHub](https://img.shields.io/badge/GitHub-View%20Repo-blue?logo=github)](https://github.com/MrShiny608/code_profiling_playground/tree/master)

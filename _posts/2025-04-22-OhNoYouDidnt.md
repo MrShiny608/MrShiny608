@@ -10,7 +10,7 @@ excerpt_separator: <!--more-->
 > A deep dive into why real-world performance often defies Big-O expectations and why context and profiling matter more than theoretical complexity
 <!--more-->
 
-[![Check me out on Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/timothybrookes) [![View on GitHub](https://img.shields.io/badge/GitHub-View%20Repo-blue?logo=github)](https://github.com/MrShiny608/code_profiling_playground/tree/master)
+[![RSS Feed](https://img.shields.io/badge/RSS-Subscribe-orange?logo=rss&logoColor=white)](https://mrshiny608.github.io/MrShiny608/feed.xml)  [![Check me out on Linkedin](https://img.shields.io/badge/LinkedIn-Profile-0077B5?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/timothybrookes) [![View on GitHub](https://img.shields.io/badge/GitHub-View%20Repo-blue?logo=github)](https://github.com/MrShiny608/code_profiling_playground/tree/master)
 
 ## How Can We Make This Faster? 🏎️💨
 
@@ -418,4 +418,4 @@ Here we see that `from_keys` is also slower than our original implementation, ev
 
 ---
 
-[![Check me out on Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/timothybrookes) [![View on GitHub](https://img.shields.io/badge/GitHub-View%20Repo-blue?logo=github)](https://github.com/MrShiny608/code_profiling_playground/tree/master)
+[![RSS Feed](https://img.shields.io/badge/RSS-Subscribe-orange?logo=rss&logoColor=white)](https://mrshiny608.github.io/MrShiny608/feed.xml)  [![Check me out on Linkedin](https://img.shields.io/badge/LinkedIn-Profile-0077B5?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/timothybrookes) [![View on GitHub](https://img.shields.io/badge/GitHub-View%20Repo-blue?logo=github)](https://github.com/MrShiny608/code_profiling_playground/tree/master)
