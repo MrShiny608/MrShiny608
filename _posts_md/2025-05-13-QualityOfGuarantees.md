@@ -10,6 +10,8 @@ excerpt_separator: <!--more-->
 > What if the rock-solid foundations your system relies on... aren’t?
 <!--more-->
 
+[![RSS Feed](https://img.shields.io/badge/RSS-Subscribe-orange?logo=rss&logoColor=white)](https://mrshiny608.github.io/MrShiny608/feed.xml) [![Check me out on Linkedin](https://img.shields.io/badge/LinkedIn-Profile-0077B5?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/timothybrookes)
+
 ## 🧠 Foundations Built on Sand?
 
 Many software engineers like to think they work in a very "pure" field - much like in math, where 1 + 1 always ([okay, normally](https://medium.com/%40mmajormoss/explaining-as-a-mathematically-disinclined-individual-why-1-1-does-not-equal-2-9deaac7d4c09)) equals 2, we assume a given operation with the same inputs always yields the same output. But does it? In reality, software is built atop countless conventions and guarantees - some strong, some... not so much.
@@ -70,3 +72,7 @@ Rather than watching the outbox table with a CDC tool and hoping developers reme
 Most of what we rely on in software isn’t as stable as we think. Some things are conventions with strong cultural momentum, others are guarantees with asterisks and fine print. Sometimes we build systems on rock; other times, we’re skating over ice and hoping it doesn’t crack.
 
 Knowing the difference - and designing with eyes open - is often what separates a system that wakes up the on-call team at 3 a.m. from one that keeps on ticking. The job isn’t to eliminate every risk. It’s to understand which ones you’ve taken - and to recognise when it’s time to reassess, adapt, or reinforce those assumptions before they turn brittle.
+
+---
+
+[![RSS Feed](https://img.shields.io/badge/RSS-Subscribe-orange?logo=rss&logoColor=white)](https://mrshiny608.github.io/MrShiny608/feed.xml) [![Check me out on Linkedin](https://img.shields.io/badge/LinkedIn-Profile-0077B5?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/timothybrookes)
