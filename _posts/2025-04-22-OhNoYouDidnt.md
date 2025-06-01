@@ -14,7 +14,7 @@ excerpt_separator: <!--more-->
 
 ## How Can We Make This Faster? 🏎️💨
 
-In one of the many interviews I've been doing lately, I found myself staring down a Leetcode-style question. Now, I know these get mixed reactions - some argue you can't possibly assess a developer's true abilities in 30-60 minutes with a couple of function implementations, while others see the value in how a candidate tackles problems, communicates, and collaborates. Personally? I don’t love them, but I do enjoy the excuse to show off some of the deeper magics...🧙‍♂️
+In one of the many interviews I've been doing lately, I found myself staring down a Leetcode-style question. Now, I know these get mixed reactions - some argue you can't possibly assess a developer's true abilities in 30-60 minutes with a couple of function implementations, while others see the value in how a candidate tackles problems, communicates, and collaborates. Personally? I don't love them, but I do enjoy the excuse to show off some of the deeper magics...🧙‍♂️
 
 The task? The classic "Two Sum" problem. You're given a list of unique numbers and a target. Find the indices of the two numbers that add up to the target. Easy. I quickly typed out the brute-force solution in Go:
 
@@ -47,7 +47,7 @@ return nil
 
 The next few minutes were spent discussing Big-O notation. My implementation? `O(n²)`. The classic answer is to improve it to `O(n)` with a hashmap. But I pointed out - Big-O doesn't measure speed, it measures how *performance degrades* as `n` increases.
 
-Here’s what that looks like:
+Here's what that looks like:
 
 ```go
 // target := int64(8)
@@ -130,11 +130,11 @@ xychart-beta
 </div>
 </div>
 
-Now this one’s interesting. 🤔 Ignoring the “steps” for a moment, the general trend is `O(n)` as expected - but at `n = 10` it takes a staggering \~721ns, more than ten times slower than the brute force implementation.
+Now this one's interesting. 🤔 Ignoring the "steps" for a moment, the general trend is `O(n)` as expected - but at `n = 10` it takes a staggering \~721ns, more than ten times slower than the brute force implementation.
 
 But what are those steps?
 
-They come from bucket allocation. Go’s map implementation starts with an initial bucket size. When it fills up, it grows the map - not by 1, but by a factor. Each resize involves memory allocation *and* copying. That’s expensive. 💸
+They come from bucket allocation. Go's map implementation starts with an initial bucket size. When it fills up, it grows the map - not by 1, but by a factor. Each resize involves memory allocation *and* copying. That's expensive. 💸
 
 <div class="mermaid-grid">
 <div class="xlarge-inline-card">
@@ -153,11 +153,11 @@ xychart-beta
 </div>
 </div>
 
-Overlaying both implementations, it’s clear: below `~n = 370`, brute force is faster. After `~n = 500`, the hashmap version pulls ahead. 🚀
+Overlaying both implementations, it's clear: below `~n = 370`, brute force is faster. After `~n = 500`, the hashmap version pulls ahead. 🚀
 
 So back to the interview: *the binary of the universe flickering in and out of existence, the fabric of reality loosening like the seams...* 🪐
 
-"No, we can’t make this faster - not for this use case."
+"No, we can't make this faster - not for this use case."
 
 ## Context Matters 🎯
 
@@ -165,18 +165,18 @@ Sure, Two Sum is simple. But the lesson applies broadly.
 
 Consider these examples:
 
-- **In-match leaderboard** 🏆: Are you really handling 370+ players at once? Highly unlikely - unless you're running an MMO raid boss from hell. Stick with the `O(n²)` brute-force - it’s simpler, and faster where it matters.
+- **In-match leaderboard** 🏆: Are you really handling 370+ players at once? Highly unlikely - unless you're running an MMO raid boss from hell. Stick with the `O(n²)` brute-force - it's simpler, and faster where it matters.
 - **Global leaderboard** 🌍: Got thousands or millions of players syncing in real-time? Now you're in scalability territory. This is where `O(n)` starts earning its keep.
 - **UI hit detection** 🧩: Ten overlapping widgets on a screen? Brute-force is fine. No need to build a spatial index for your todo app.
-- **Ray tracing** 🎥: Hundreds of thousands of rays and geometry? That’s when `O(log n)` acceleration structures save your bacon.
+- **Ray tracing** 🎥: Hundreds of thousands of rays and geometry? That's when `O(log n)` acceleration structures save your bacon.
 - **Fraud detection** 🔒: Comparing hundreds of transactions per user per second? Better optimize that logic path, or your infra bill will find you.
 - **AI search trees** ♟️: Got a 3-move lookahead in chess? Brute force might work. But a 20-move tree? Welcome to exponential growth - better bring pruning and heuristics.
 
-The right choice depends on context, and to prove your assumptions requires measurement. Choosing `O(n)` "because it's faster" is the wrong instinct. It’s not faster - it just has a better *rate of performance decay*.
+The right choice depends on context, and to prove your assumptions requires measurement. Choosing `O(n)` "because it's faster" is the wrong instinct. It's not faster - it just has a better *rate of performance decay*.
 
 ## Is This Always True? 🤷‍♂️
 
-I wanted to test Python too. It’s not a fair fight - Go is a compiled, low-level beast. Python, even on a good day, is an interpreted langauge who takes strolls in the park, watches the ducks, and honours the UK Tea Alarm. 🫖
+I wanted to test Python too. It's not a fair fight - Go is a compiled, low-level beast. Python, even on a good day, is an interpreted langauge who takes strolls in the park, watches the ducks, and honours the UK Tea Alarm. 🫖
 
 But I was curious, how would an interpreted language fare? 🧐
 
@@ -253,16 +253,16 @@ Wait... what? 😳
 
 *Python materializes beside me in the interview room - cloaked in swirling purple vapour, its presence bending the rules of logic and* - okay okay, enough with the dramatisation! 🧙‍♂️
 
-Erm, yes, so, beating all expectations Python has not only achieved performance *on par with Go* but it's also avoided the stepped allocations, at `n = 10` Python took \~1604ns! I checked out some PEPs and the CPython dictionary [source code](https://github.com/python/cpython/blob/main/Objects/dictobject.c), here’s what’s going on:
+Erm, yes, so, beating all expectations Python has not only achieved performance *on par with Go* but it's also avoided the stepped allocations, at `n = 10` Python took \~1604ns! I checked out some PEPs and the CPython dictionary [source code](https://github.com/python/cpython/blob/main/Objects/dictobject.c), here's what's going on:
 
-- `complement in hashmap` and `hashmap[a] = i` are backed by C implementations, these operations don’t stay in Python - they cross the boundary into optimized C code, skipping the interpreter’s overhead entirely. That boundary crossing is expensive in general, but once through, you get raw performance with near-native memory access speeds. 🚀
-- Writes to dict are mostly memory-bound - and Python’s bottleneck *is* the CPU. While waiting for those memory accesses to complete, the CPU doesn’t just sit idle. It stays busy interpreting Python bytecode, handling reference counting, checking types, and managing control flow.
+- `complement in hashmap` and `hashmap[a] = i` are backed by C implementations, these operations don't stay in Python - they cross the boundary into optimized C code, skipping the interpreter's overhead entirely. That boundary crossing is expensive in general, but once through, you get raw performance with near-native memory access speeds. 🚀
+- Writes to dict are mostly memory-bound - and Python's bottleneck *is* the CPU. While waiting for those memory accesses to complete, the CPU doesn't just sit idle. It stays busy interpreting Python bytecode, handling reference counting, checking types, and managing control flow.
 
 Combined, these mean Python is able to perform ridiculously fast, and time it's allocations to fit better within CPU utilisation. If you squint hard, you *can* spot micro-steps, but they're faint. The interpreted nature of Python smooths the curve. 🌊
 
 ## So what's the real takeaway? 🎓
 
-Big-O isn't about speed - it's about rate of decay. Profiling beats speculation every time. Complexity tells you *how bad things might get*, but not *when*. That line? You won’t find it on a whiteboard - you find it on a profiler.
+Big-O isn't about speed - it's about rate of decay. Profiling beats speculation every time. Complexity tells you *how bad things might get*, but not *when*. That line? You won't find it on a whiteboard - you find it on a profiler.
 
 - ✅ Measure first. Think later.
 - ✅ Choose algorithms based on *real-world contexts*, not theoretical elegance.
@@ -278,7 +278,7 @@ In Go, we can preallocate enough memory for our hashmap right from the start, el
 hashmap := make(map[int64]int64, len(data))
 ```
 
-The rest of the code stays exactly the same. The result? The allocation "steps" become smaller and smoother. There’s still an upfront allocation cost, but now it happens once - early and predictably, which is why we still get steps, but they are much smaller. ✨
+The rest of the code stays exactly the same. The result? The allocation "steps" become smaller and smoother. There's still an upfront allocation cost, but now it happens once - early and predictably, which is why we still get steps, but they are much smaller. ✨
 
 The reason I didn't include this in the above is because it added complexity to the post and this post isn't about Go vs Python, it is about `O(n)` vs `O(n²)`
 

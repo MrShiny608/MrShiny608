@@ -48,7 +48,7 @@ Asynchronous interviews can be a great time-saver - up to a point. I'm used to f
 
 At first, I thought it might be a phishing attempt to gather video samples for deepfakes. It turns out the service is legitimate, but the format still makes little sense. I have to watch their video, and they have to watch mine - very little time is saved overall. Crucially, it removes the opportunity for candidates to ask clarifying questions. Hiring is not a one-way evaluation; candidates are vetting the company too.
 
-Needless to say, I withdrew from the process, and since no human had bothered to communicate directly with me, I didn’t feel obligated to inform them.
+Needless to say, I withdrew from the process, and since no human had bothered to communicate directly with me, I didn't feel obligated to inform them.
 
 ## Applicant Tracking Systems 🖥️
 
@@ -66,7 +66,7 @@ This kind of expectation signals a fundamental misunderstanding of both hiring a
 
 ## Lack of Attention to Applications 📝
 
-I always complete the initial application forms thoroughly, even if it means putting "0 years experience" against a skill. However, when a company sends me a second form asking for the same information already provided in my CV or initial responses, it's a clear signal they aren’t paying attention.
+I always complete the initial application forms thoroughly, even if it means putting "0 years experience" against a skill. However, when a company sends me a second form asking for the same information already provided in my CV or initial responses, it's a clear signal they aren't paying attention.
 
 If you can't consolidate your questions into the first form or read what I've already sent, it tells me all I need to know about how communication will be within your company. The hiring process often acts as a preview of an organisation's internal operations - if communication is disorganised and ineffective at this early stage, it is likely to be even worse once you're inside. Poor attention to detail and respect for people's time usually indicates broader problems with culture, leadership, and daily operations.
 
@@ -94,7 +94,7 @@ Reasonable assessments respect candidates' time and effort; exploitative ones dr
 
 Some job postings provide little more than a list of technologies, offering no clarity on the actual work involved - sometimes not even mentioning the sector. Many also fail to disclose salary ranges altogether. When they do, the ranges are often extremely broad; £60,000–£100,000 is surprisingly common, and I even spotted one today listing £80,000–£300,000.
 
-While flexibility is important, salary ranges that wide often signal a lack of clarity about the role’s seniority or scope. More often than not, I assume that companies intend to offer salaries at the lower end of the range, with the upper figure serving mainly to attract attention.
+While flexibility is important, salary ranges that wide often signal a lack of clarity about the role's seniority or scope. More often than not, I assume that companies intend to offer salaries at the lower end of the range, with the upper figure serving mainly to attract attention.
 
 Transparency about the role and compensation is essential to building trust with candidates from the outset.
 

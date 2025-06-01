@@ -38,7 +38,7 @@ Done, right? 🚀
 
 Unfortunately, this is where many engineers go wrong. They speculate about the problem and implement a fix without ever measuring whether it actually helped. If you're not measuring, you're guessing.
 
-There’s nothing wrong with forming hypotheses - that’s how good science works. But the hypothesis isn't the answer. You’ve got to test it.
+There's nothing wrong with forming hypotheses - that's how good science works. But the hypothesis isn't the answer. You've got to test it.
 
 So how do we *actually* measure our optimisations?
 
@@ -68,13 +68,13 @@ These clocks are too unstable to rely on for short durations. For example:
 - `clock_gettime(CLOCK_MONOTONIC)` (Linux) can report nanosecond resolution, but real-world jitter is usually in the 5–50µs range due to system scheduling and kernel overhead.
 - `time.Now()` in Go (like `time.time()` in Python or `clock()` in C) wraps platform APIs and often only updates every \~16µs on many systems - making it nearly useless for microbenchmarks. This limitation is common across many high-level languages, as they rely on the same underlying system clocks.
 
-Resolution != accuracy. Even if a clock *can* report values to the micro- or nanosecond, that doesn’t mean it reflects reality to that precision 😅.
+Resolution != accuracy. Even if a clock *can* report values to the micro- or nanosecond, that doesn't mean it reflects reality to that precision 😅.
 
 ### 🔁 Beat the Noise With Repetition
 
 So we run the function many times and divide the total duration by the number of runs. Easy fix? Kind of... but now we introduce (or rather, exacerbate) CPU noise - the unavoidable fluctuations caused by everything else your system is doing in the background.
 
-Your CPU isn’t just running your function - it’s juggling threads, handling interrupts, managing OS processes, executing instructions out of order, and possibly adjusting clock speed on the fly.
+Your CPU isn't just running your function - it's juggling threads, handling interrupts, managing OS processes, executing instructions out of order, and possibly adjusting clock speed on the fly.
 
 ```go
 type Callable func() (result any)
@@ -151,13 +151,13 @@ Just like data, code is loaded from memory into caches. If your function crosses
 
 Profiling in situ sounds nice - it mimics the real production environment. But the danger is overfitting: your optimisation might be too specific to the current memory layout, code arrangement, or cache alignment. Even a small unrelated change elsewhere in the codebase could shift things around enough to invalidate your carefully tuned gains.
 
-If you’ve ever seen an optimisation mysteriously stop working weeks later, this might be why.
+If you've ever seen an optimisation mysteriously stop working weeks later, this might be why.
 
 ✅ Tip: Profile in a minimal, isolated environment. Control everything you can - ideally, compile each test separately to minimise interference from unrelated code.
 
 ### ✂️ Your Compiler is Smarter Than You Think
 
-Sometimes your profiled function seems incredibly fast - suspiciously fast. That’s often because the compiler has optimised it away entirely, removing the work because it noticed the result isn’t used anywhere.
+Sometimes your profiled function seems incredibly fast - suspiciously fast. That's often because the compiler has optimised it away entirely, removing the work because it noticed the result isn't used anywhere.
 
 To prevent this, make sure your function returns a value, and do something with it. Don't let the compiler skip the work.
 
@@ -178,16 +178,16 @@ func work(data []SomeData) (result any) {
 }
 ```
 
-As long as you're consistent between your tests, this won’t skew results.
+As long as you're consistent between your tests, this won't skew results.
 
 ### 🧠 Your Processor is Smarter Than You Think
 
-Modern CPUs don’t just sit and execute your code - they learn. As your program runs, the processor dynamically adjusts how it executes instructions to improve performance:
+Modern CPUs don't just sit and execute your code - they learn. As your program runs, the processor dynamically adjusts how it executes instructions to improve performance:
 
 - 🔄 Branch prediction gets more accurate as the CPU observes actual branching patterns.
 - 🧠 Instruction caching and micro-op fusion kick in to reduce pipeline stalls.
 - 🚀 Out-of-order execution improves throughput as the CPU figures out which operations it can run in parallel.
-- 📈 Speculative execution tries to guess and execute future instructions before they’re needed.
+- 📈 Speculative execution tries to guess and execute future instructions before they're needed.
 
 All of these things can make your program faster over time - even without code changes. But they also make profiling harder, because early runs can behave differently from later ones.
 
@@ -220,7 +220,7 @@ If you want meaningful, repeatable results:
 - 🔄 Execute each binary multiple times to smooth out mid-term variability.
 - 🔀 Interleave similar configurations from different tests to reduce bias from longer lived variability.
 - 🧠 Apply human judgment when reviewing outliers - graphs and intuition can spot things stats miss.
-- 🔥 Warm up your JITs to measure code that’s actually running how it would in production.
+- 🔥 Warm up your JITs to measure code that's actually running how it would in production.
 - 🤖 Make sure you're really measuring what you think you are - no optimised-away logic or skewed setup costs.
 
 ---

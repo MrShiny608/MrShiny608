@@ -14,9 +14,9 @@ excerpt_separator: <!--more-->
 
 ## 💡 The Premise
 
-GitHub’s contribution graph — those little green bathroom tiles — is often misunderstood as a measure of developer quality. More commits? Must be a better engineer! But that's completely devoid of context. How good are those commits? Are they just bugs? Are they thrown together unmaintainable code? Are they flip-flopping between design decisions?
+GitHub's contribution graph — those little green bathroom tiles — is often misunderstood as a measure of developer quality. More commits? Must be a better engineer! But that's completely devoid of context. How good are those commits? Are they just bugs? Are they thrown together unmaintainable code? Are they flip-flopping between design decisions?
 
-So I built the **Bathroom Tile Machine** 🧱: a fake commit generator that turns your GitHub graph into an art project. It’s not fraud (unless you lie about it). It’s a satirical, educational tool to highlight why metrics without context are meaningless.
+So I built the **Bathroom Tile Machine** 🧱: a fake commit generator that turns your GitHub graph into an art project. It's not fraud (unless you lie about it). It's a satirical, educational tool to highlight why metrics without context are meaningless.
 
 ## ⚠️ Disclaimer
 
@@ -24,7 +24,7 @@ Just to be clear, I strongly recommend you do not use this tool to misrepresent 
 
 ## 🤔 Why This Exists
 
-I’ve heard too many times that a green graph means “productive.” It doesn’t.
+I've heard too many times that a green graph means "productive." It doesn't.
 
 - ✅ A commit could be a beautiful refactor — or a one-line bug disguised as progress.
 - 🤹‍♂️ Good engineers think about the logic and performance of code they implement. Great ones think about maintainability, reliability, and long-term health of the system.
@@ -52,9 +52,9 @@ So let's look two years later:
 
 ![2018 GitHub Contributions]({{ site.baseurl }}/assets/images/contribution_graph_2018.png)
 
-At this point I was a solo dev owning multiple microservices across a repo-per-service setup. I was on top of it all and developing features like mad — this and the following few years was probably some of the most productive I’ve ever been as an individual contributor. The graph looks a bit better than the first image, but the quality of my code here was well beyond what 2016-me could have imagined.
+At this point I was a solo dev owning multiple microservices across a repo-per-service setup. I was on top of it all and developing features like mad — this and the following few years was probably some of the most productive I've ever been as an individual contributor. The graph looks a bit better than the first image, but the quality of my code here was well beyond what 2016-me could have imagined.
 
-But is that all there is to being an engineer? Of course not — being productive alone isn’t the endgame. The real challenge (and reward) is enabling _others_ to be productive too.
+But is that all there is to being an engineer? Of course not — being productive alone isn't the endgame. The real challenge (and reward) is enabling _others_ to be productive too.
 
 ### 🧑‍🏫 Principals of a Principal Developer
 
@@ -62,7 +62,7 @@ But is that all there is to being an engineer? Of course not — being productiv
 
 2021 looks like a reduction, right? Wrong. Sure, I'm committing less frequently, but I'm now a member of a team — mentoring other developers, aiding in design discussions, optimising struggling databases, pair programming, reviewing code, recording knowledge sharing presentations, and so much more.
 
-Am I less productive? Maybe individually — all this "team" stuff takes time — but my personal impact? 💥 I'm having more impact here because I’m empowering those around me to have a larger impact.
+Am I less productive? Maybe individually — all this "team" stuff takes time — but my personal impact? 💥 I'm having more impact here because I'm empowering those around me to have a larger impact.
 
 ### 🕵️ Stealth Mode
 
@@ -70,11 +70,11 @@ Finally, this last year — no longer Jan–Dec, but a great tale of three parts
 
 ![Recent Year GitHub Contributions]({{ site.baseurl }}/assets/images/contribution_graph_recent.png)
 
-“Wow!”, you might say, “What a layabout!” 😬 Well, in the first third of the year I was on a project using Perforce, so yeah, GitHub doesn’t have a clue what I was up to. Those commits were me working on personal projects in the evenings and weekends.
+"Wow!", you might say, "What a layabout!" 😬 Well, in the first third of the year I was on a project using Perforce, so yeah, GitHub doesn't have a clue what I was up to. Those commits were me working on personal projects in the evenings and weekends.
 
-“Okay sure, but what about the second third?”, you might say. At this point I was working so hard on the day job that I had nothing left to give in the evenings. Sometimes that happens, and that is completely okay. We’re human, and pretending we can work at 100% all the time is nonsense.
+"Okay sure, but what about the second third?", you might say. At this point I was working so hard on the day job that I had nothing left to give in the evenings. Sometimes that happens, and that is completely okay. We're human, and pretending we can work at 100% all the time is nonsense.
 
-And the third part? Well that’s post-redundancy — me keeping on with personal projects while looking for work.
+And the third part? Well that's post-redundancy — me keeping on with personal projects while looking for work.
 
 ## 🛠️ How It Works
 
@@ -121,7 +121,7 @@ Simple, delete the fake repository and wait a while, it seems to take longer for
 
 ![Generated Fake Contributions]({{ site.baseurl }}/assets/images/contribution_graph_generated.png)
 
-Here we see a repeat of my most recent year on GitHub — you’ll notice a big chunk of commits in September that weren’t there before.
+Here we see a repeat of my most recent year on GitHub — you'll notice a big chunk of commits in September that weren't there before.
 
 Evidently, at this point I was an AI-powered, blockchain-verified, 10x unicorn. 🤮
 
@@ -129,16 +129,16 @@ Evidently, at this point I was an AI-powered, blockchain-verified, 10x unicorn. 
 
 This tool includes warnings, disclaimers, and obvious tells (like `.THIS_IS_FAKE`) to make sure no one mistakes generated commits for real work.
 
-I can’t stop you from removing them... but please don’t. Just bear in mind:
+I can't stop you from removing them... but please don't. Just bear in mind:
 
 🚫 Using it to misrepresent yourself is dishonest.\
-✅ Using it to start a conversation? Now we’re talking.
+✅ Using it to start a conversation? Now we're talking.
 
 ## ✨ Final Thoughts
 
 This project is a satire, a dev tool, a learning aid, and a very nerdy joke. 🤓
 
-If it makes you laugh — or think twice before judging someone’s GitHub profile — it’s done its job.
+If it makes you laugh — or think twice before judging someone's GitHub profile — it's done its job.
 
 ---
 

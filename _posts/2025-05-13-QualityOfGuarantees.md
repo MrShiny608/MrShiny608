@@ -7,7 +7,7 @@ categories: commentary
 excerpt_separator: <!--more-->
 ---
 
-> What if the rock-solid foundations your system relies on... aren’t?
+> What if the rock-solid foundations your system relies on... aren't?
 <!--more-->
 
 [![RSS Feed](https://img.shields.io/badge/RSS-Subscribe-orange?logo=rss&logoColor=white)](https://mrshiny608.github.io/MrShiny608/feed.xml) [![Check me out on Linkedin](https://img.shields.io/badge/LinkedIn-Profile-0077B5?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/timothybrookes)
@@ -28,7 +28,7 @@ And yet, these conventions underpin everything from our shell scripts to our dis
 
 Beyond conventions, we rely heavily on guarantees. Memory we set stays set - unless a cosmic ray flips a bit. UUIDv4 won't collide - probably. Disk writes are durable after `fsync()` - usually.
 
-Some guarantees sound strong but aren’t:
+Some guarantees sound strong but aren't:
 
 * ⏱️ Time always moves forward? NTP corrections can rewind the clock.
 * 🌍 The internet always routes traffic correctly? [BGP misconfigurations](https://www.ripe.net/about-us/news/youtube-hijacking-a-ripe-ncc-ris-case-study/) can misroute entire countries.
@@ -44,14 +44,14 @@ Once you start hitting these edges, the cracks in your assumptions widen. What y
 
 ## 🧨 When Guarantees Aren't
 
-Some guarantees look solid until you realise they’re balanced on assumptions that aren’t guaranteed at all. For example, a pattern I see gaining popularity is the Event Outbox pattern - designed to solve the issue of writing data and emitting an event in a single atomic operation.
+Some guarantees look solid until you realise they're balanced on assumptions that aren't guaranteed at all. For example, a pattern I see gaining popularity is the Event Outbox pattern - designed to solve the issue of writing data and emitting an event in a single atomic operation.
 
 ```python
 database.update("user1234", "some_data")
 messageQueue.push("Hey, I updated user1234")
 ```
 
-Looks good? Not quite. If the system crashes in between those lines - or the coroutine thread is torn down - you’ll lose the message. Runtimes like Node.js or collaborative concurrency libraries like asyncio in Python are particularly exposed here, but no environment is immune. A SIGKILL or OOM can cut off your process between those two lines.
+Looks good? Not quite. If the system crashes in between those lines - or the coroutine thread is torn down - you'll lose the message. Runtimes like Node.js or collaborative concurrency libraries like asyncio in Python are particularly exposed here, but no environment is immune. A SIGKILL or OOM can cut off your process between those two lines.
 
 Enter the Event Outbox: write the message to a table in the same transaction as the data update. A background service reads from this table and pushes to the queue, marking it as sent only once acknowledged.
 
@@ -59,9 +59,9 @@ This solves the crash-in-the-middle issue, but it doesn't fix more critical vuln
 
 * ❓ What if a developer forgets to add the message to the outbox?
 * 🔁 What if a migration script corrects malformed data but skips messaging?
-* 🧑‍💻 What about manual DB edits? (Yes, I’ve seen cultures where engineers run direct SQL against prod to "fix" bugs.)
+* 🧑‍💻 What about manual DB edits? (Yes, I've seen cultures where engineers run direct SQL against prod to "fix" bugs.)
 
-I’ve worked with companies where entire teams - as much as 10% of the engineering org - were dedicated solely to repairing data inconsistencies: patching over bugs, correcting silent human mistakes, and recovering from missing or misfired events.
+I've worked with companies where entire teams - as much as 10% of the engineering org - were dedicated solely to repairing data inconsistencies: patching over bugs, correcting silent human mistakes, and recovering from missing or misfired events.
 
 I brought this up in a recent interview. The tech director dismissed the problem with a shrug - "you can't solve everything." And sure, not everything needs solving. But here, you actually *can* harden a fragile, human-enforced guarantee into a deterministic computing one.
 
@@ -69,9 +69,9 @@ Rather than watching the outbox table with a CDC tool and hoping developers reme
 
 ## ✅ Wrapping Up
 
-Most of what we rely on in software isn’t as stable as we think. Some things are conventions with strong cultural momentum, others are guarantees with asterisks and fine print. Sometimes we build systems on rock; other times, we’re skating over ice and hoping it doesn’t crack.
+Most of what we rely on in software isn't as stable as we think. Some things are conventions with strong cultural momentum, others are guarantees with asterisks and fine print. Sometimes we build systems on rock; other times, we're skating over ice and hoping it doesn't crack.
 
-Knowing the difference - and designing with eyes open - is often what separates a system that wakes up the on-call team at 3 a.m. from one that keeps on ticking. The job isn’t to eliminate every risk. It’s to understand which ones you’ve taken - and to recognise when it’s time to reassess, adapt, or reinforce those assumptions before they turn brittle.
+Knowing the difference - and designing with eyes open - is often what separates a system that wakes up the on-call team at 3 a.m. from one that keeps on ticking. The job isn't to eliminate every risk. It's to understand which ones you've taken - and to recognise when it's time to reassess, adapt, or reinforce those assumptions before they turn brittle.
 
 ---
 
