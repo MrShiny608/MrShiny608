@@ -42,7 +42,7 @@ This tool is here to:
 
 2016 is my first year using GitHub. My graph looks decent, right? Well, at this point I was jumping in the deep end developing systems I'd never developed before, using languages I'd never used before, and databases I'd never touched before.
 
-![2016 GitHub Contributions](/assets/images/contribution_graph_2016.png)
+![2016 GitHub Contributions](/assets/images/2025-04-01-BathroomTileMachine/contribution_graph_2016.png)
 
 So were these good commits? Hell no. I wrote an MVP in the first month, and then spent the next few weeks rewriting because, frankly, it was insane.
 
@@ -50,7 +50,7 @@ So were these good commits? Hell no. I wrote an MVP in the first month, and then
 
 So let's look two years later:
 
-![2018 GitHub Contributions](/assets/images/contribution_graph_2018.png)
+![2018 GitHub Contributions](/assets/images/2025-04-01-BathroomTileMachine/contribution_graph_2018.png)
 
 At this point I was a solo dev owning multiple microservices across a repo-per-service setup. I was on top of it all and developing features like mad — this and the following few years was probably some of the most productive I've ever been as an individual contributor. The graph looks a bit better than the first image, but the quality of my code here was well beyond what 2016-me could have imagined.
 
@@ -58,7 +58,7 @@ But is that all there is to being an engineer? Of course not — being productiv
 
 ### 🧑‍🏫 Principals of a Principal Developer
 
-![2021 GitHub Contributions](/assets/images/contribution_graph_2021.png)
+![2021 GitHub Contributions](/assets/images/2025-04-01-BathroomTileMachine/contribution_graph_2021.png)
 
 2021 looks like a reduction, right? Wrong. Sure, I'm committing less frequently, but I'm now a member of a team — mentoring other developers, aiding in design discussions, optimising struggling databases, pair programming, reviewing code, recording knowledge sharing presentations, and so much more.
 
@@ -68,7 +68,7 @@ Am I less productive? Maybe individually — all this "team" stuff takes time �
 
 Finally, this last year — no longer Jan–Dec, but a great tale of three parts:
 
-![Recent Year GitHub Contributions](/assets/images/contribution_graph_recent.png)
+![Recent Year GitHub Contributions](/assets/images/2025-04-01-BathroomTileMachine/contribution_graph_recent.png)
 
 "Wow!", you might say, "What a layabout!" 😬 Well, in the first third of the year I was on a project using Perforce, so yeah, GitHub doesn't have a clue what I was up to. Those commits were me working on personal projects in the evenings and weekends.
 
@@ -119,7 +119,7 @@ Simple, delete the fake repository and wait a while, it seems to take longer for
 
 ### 🖼 Sample Output
 
-![Generated Fake Contributions](/assets/images/contribution_graph_generated.png)
+![Generated Fake Contributions](/assets/images/2025-04-01-BathroomTileMachine/contribution_graph_generated.png)
 
 Here we see a repeat of my most recent year on GitHub — you'll notice a big chunk of commits in September that weren't there before.
 
