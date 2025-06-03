@@ -26,7 +26,7 @@ Let me share my first on-the-job encounter with an "athlete-unwelcoming" perspec
 
 Legit. That's what was said. It stuck with me - partly because, in retrospect, it was absurdly funny - but also because it marked a turning point. Person A did step in with a defusing "dude...", but from that moment I never mentioned sport around that team again. Since then, and in other teams, I've been called a "meat head", dismissed as not being "enough" of an engineer (because of the athleticism), and told that if I have time to train, I'm clearly not prioritising work.
 
-So here's my disclaimer: this post isn't about tech of software engineering. It's about my sporting journey - especially recent setbacks, and the process of rebuilding my fitness through careful and constant adaptation.
+So here's my disclaimer: this post isn't about tech or software engineering. It's about my sporting journey - especially recent setbacks, and the process of rebuilding my fitness through careful and constant adaptation.
 
 And another: nothing here is world-class. I'm not the fastest, strongest, or most dedicated. I train to be healthy, not to win medals. So if this ends up reposted on a forum somewhere, please know - yes, I'm aware it's "not that fast" or "not that far". That's not the point.
 
@@ -34,7 +34,7 @@ And another: nothing here is world-class. I'm not the fastest, strongest, or mos
 
 My fitness journey started by accident. I wanted to buy computer games - and games cost money. So I got a job as a paperboy at 13. My route? A 10km loop with a subscription paper - meaning fewer stops, more cycling.
 
-At some point around age 16, I picked up some weights and started working out in secret because I was scrawny and didn't like that. Eventually, without really noticing, I became healthy.
+At some point around age 16, I picked up some weights and started working out "in secret" because I was scrawny and didn't like that. Eventually, without really noticing, I became healthy.
 
 That habit stuck. I never aimed to be "hench" or to compete - I just kept training. Years later, at an "athlete-tolerating" company, someone asked if anyone wanted to join them on a [Wolf Run](https://thewolfrun.com/). I'd never run 10k, and hadn't run in years - so naturally, I signed up. I was so worried I'd let the team down by being slow, that I trained really hard and ended up as one of the fastest in our group.
 
@@ -46,13 +46,13 @@ In 2023, something changed. In hindsight, I think it started when I got a coach.
 
 That, combined with an increase in "life stuff" meant training started slipping. Sometimes it was late nights of recovering from the day that made early sessions impossible. Other times, I just didn't have the bandwidth to push hard enough for training to be effective.
 
-After the London Triathlon that year, I took a month off. Then another. And then another. What had been two decades of 5-days-a-week training turned into a year of near-inactivity.\*
+After the London Triathlon that year, I took a month off. Then another. And then another. What had been two decades of 5-days-a-week training turned into a year of near-inactivity\*.
 
 \*Asterisk? Yeah. I still trained sometimes - maybe once a week, sometimes more - but it was nowhere near my norm. For me, it felt like I had become sedentary.
 
 In January 2025, after a year without events, I signed up for some. It was a spark - something to look forward to. Training crept back to daily, but only \~30minutes. Not my former 3-hour before-work regime, but with multiple side projects, job hunting, and trying to nail this elusive "work-life balance", it was all I could give.
 
-## Turning Point 🔄
+## The Other Back Foot 👣
 
 By late January, things were improving. I was still 5kg over my goal weight, but training was ramping up. I had a holiday booked in February, and planned to start proper training after. Best laid plans...
 
@@ -93,7 +93,7 @@ For training, I started by checking where I was. I ran 5k, cycled 20k, and like 
 So with a macro phase of three months, the time remaining until race day, I planned my first micro phase of one week;
 
 * **HIIT 6x 1:6 Cycle** - 30s all-out, 180s to check socials, then repeat the suffering.
-* **30 Minute Tempo Cycle** - A highly contentious term, but for me it's about doing the best I can within a time period. Hill climb if I have the energy, speed up on a flat if I can, but if I need to recover, then I am allowed - and because time is the goal, there's no "consequence" to overdoing it, I can walk the rest if I need to.
+* **30 Minute Tempo Cycle** - A highly contentious term, but for me it's about doing the best I can within a time period. Hill climb if I have the energy, speed up on a flat if I can, but if I need to recover, then I am allowed to slow down - and because time is the goal, there's no "consequence" to overdoing it, I can walk the rest if I need to.
 
 Week two, I added a run;
 
@@ -124,6 +124,12 @@ I customise the flow based on my injuries, soreness, and performance changes, it
 I cannot stress how important yoga has been for preventing injury, so much so that it's the only thing that persisted through the 15 months of near inactivity. I do it almost every evening - and only partially for fear of my toes being bitten in the night by a disgruntled cat 😾.
 
 Aside from this, when soreness began to build up in my [soleus](https://www.physio-pedia.com/Soleus) and [piriformis](https://www.physio-pedia.com/Piriformis), I took an additional Thursday and Friday off. That four day recovery paid off and the issues haven't returned.
+
+In addition, I follow some simple tricks help to keep my body from overfitting, lets call them regularisation to keep in with the neural network terminology;
+
+* **Alternate disciplines** - prevents build up of cumulative load.
+* **Vary equipment** - shown to [reduce injury risk](https://www.runnersworld.com/health-injuries/a20820451/study-backs-rotating-shoes-to-lower-injury-risk/).
+* **Dynamic warmups** - static stretching is [thought to reduce power](https://pubmed.ncbi.nlm.nih.gov/21659901/), but [not stretching isn't advisable](https://pubmed.ncbi.nlm.nih.gov/38735533/), dynamic stretching fills the gap.
 
 ## Gym 🏋️
 
