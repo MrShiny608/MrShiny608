@@ -101,7 +101,7 @@ Week two, I added a run;
 
 And week three I added another;
 
-* **HIIT 1:6 6x Run** - Same as the cycle. 30s sprint, 3 min rest.
+* **HIIT 6x 1:6 Run** - Same as the cycle. 30s sprint, 3 min rest.
 
 This persisted, the HIIT sessions increased reps where tempo and threshold sessions naturally regulated themselves, and on weeks where I had extra capacity, I would add in a 10k trail run or 4 hour hike to start working towards the endurance goals. On very infrequent occasions I was even able to add a gym session, more on that later.
 
