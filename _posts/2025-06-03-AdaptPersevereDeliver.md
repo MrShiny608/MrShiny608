@@ -177,6 +177,12 @@ In sport, as in life, success rarely comes from sticking to a perfect plan. It c
 
 > "A journey will have pain and failure. It is not only the steps forward that we must accept. It is the stumbles. The trials. The knowledge that we will fail. [...] But if we stop, if we accept the person we are when we fail, the journey ends. That failure becomes our destination." - Brandon Sanderson
 
+## One Week Later
+
+![Blenheim Palace Triathlon 2025 result]({{ site.baseurl }}/assets/images/2025-06-03-TheNextStep/blenheim_palace_triathlon_2025_result.png)
+
+Race day was great, I gave it my all, and at just 2m55 slower than 2021, I am very pleased with the result!
+
 ---
 
 [![RSS Feed](https://img.shields.io/badge/RSS-Subscribe-orange?logo=rss&logoColor=white)](https://mrshiny608.github.io/MrShiny608/feed.xml) [![Check me out on Linkedin](https://img.shields.io/badge/LinkedIn-Profile-0077B5?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/timothybrookes)
