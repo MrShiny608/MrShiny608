@@ -1,0 +1,30 @@
+{
+  "editor.tabSize": 2,
+  "editor.indentSize": "tabSize",
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "json.schemas": [
+    {
+      "fileMatch": [".golangci.json"],
+      "url": "https://golangci-lint.run/jsonschema/golangci.jsonschema.json"
+    },
+    {
+      "fileMatch": [".markdownlint.jsonc"],
+      "url": "https://raw.githubusercontent.com/DavidAnson/markdownlint/refs/heads/main/schema/markdownlint-config-schema.json"
+    }
+  ],
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "go.lintTool": "golangci-lint",
+  "go.lintFlags": ["--fast", "-c", ".golangci.json"],
+  "go.lintOnSave": "workspace",
+  "go.testFlags": ["-count=1"]
+}

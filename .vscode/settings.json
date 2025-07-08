@@ -1,14 +1,20 @@
 {
-    "emeraldwalk.runonsave":{
-        "message": "Preprocessing markdown",
-        "messageAfter": "Preprocessing markdown complete!",
-        "commands": [
-            {
-                "cmd": ". _scripts/preprocess_posts.sh",
-                "match": "_posts_md/.*\\.md",
-                "autoShowOutputPanel": "error",
-                "isAsync": false,
-            }
-        ]
-    }
+  "editor.tabSize": 2,
+  "editor.indentSize": "tabSize",
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "emeraldwalk.runonsave":{
+    "message": "Preprocessing markdown",
+    "messageAfter": "Preprocessing markdown complete!",
+    "commands": [
+      {
+        "cmd": ". _scripts/preprocess_posts.sh",
+        "match": "_posts_md/.*\\.md",
+        "autoShowOutputPanel": "error",
+        "isAsync": false,
+      }
+    ]
+  },
 }
